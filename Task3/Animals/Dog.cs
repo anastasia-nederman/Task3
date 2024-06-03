@@ -24,6 +24,12 @@ namespace Task3.Animals
         {
             return "Bark";
         }
+
+        public override string Stats()
+        {
+            return $"Name: {Name}, Age: {Age}, Weight: {Weight}, Breed: {Breed}";
+
+        }
     }
 }
 

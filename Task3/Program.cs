@@ -1,4 +1,5 @@
 ﻿using System.Reflection;
+using Task3.Animals;
 using Task3.Errors;
 
 namespace Task3
@@ -8,7 +9,7 @@ namespace Task3
         static void Main(string[] args)
         {
             // 3.1
-            
+
             /* 
             var anna = new Person();
             try
@@ -64,7 +65,21 @@ namespace Task3
                 Console.WriteLine(error.UEMessage());
             }
 
+            List<Animal> animals = new List<Animal>();
+            animals.Add(new Dog("Jack", 9, 13.3, "golden retriever"));
+            animals.Add(new Hedgehog("Charlie", 2, 0.7, 3300));
+            animals.Add(new Worm("Severus", 1, 0.8, true));
+            animals.Add(new Wolfman("Regulus Black", 35, 85, true));
 
+            foreach (var animal in animals)
+            {
+                Console.WriteLine(animal.Stats());
+                Console.WriteLine(animal.DoSound());
+                if (animal is IPerson person)
+                {
+                    Console.WriteLine(person.Talk());
+                }
+            }
 
 
 

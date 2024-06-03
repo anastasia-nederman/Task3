@@ -24,5 +24,11 @@ namespace Task3.Animals
         {
             return "Howl";
         }
+
+        public override string Stats()
+        {
+            return $"Name: {Name}, Age: {Age}, Weight: {Weight}, Is Lonely: {IsLonely}";
+
+        }
     }
 }

@@ -24,5 +24,11 @@ namespace Task3.Animals
         {
             return "Neigh";
         }
+
+        public override string Stats()
+        {
+            return $"Name: {Name}, Age: {Age}, Weight: {Weight}, Max Speed: {MaxSpeed}";
+
+        }
     }
 }

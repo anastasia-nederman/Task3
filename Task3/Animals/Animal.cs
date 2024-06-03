@@ -43,6 +43,8 @@ namespace Task3.Animals
 
         // Methods
         public abstract string DoSound();
+
+        public abstract string Stats();
     }
 }
 
