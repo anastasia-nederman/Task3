@@ -30,6 +30,11 @@ namespace Task3.Animals
             return $"Name: {Name}, Age: {Age}, Weight: {Weight}, Breed: {Breed}";
 
         }
+
+        public string DoSadSound()
+        {
+            return "Whine";
+        }
     }
 }
 
